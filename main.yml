@@ -46,8 +46,8 @@
       when: configure_osx
       tags: ['osx']
 
-    - import_tasks: tasks/starship-preset.yml
-      tags: ['starship-preset']
+    - import_tasks: tasks/starship.yml
+      tags: ['starship']
 
     - block:
         - name: Run configured post-provision ansible task files.

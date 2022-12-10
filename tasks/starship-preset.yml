@@ -1,5 +1,0 @@
-- name: Install starship preset
-  ansible.builtin.shell: |
-    mkdir -p ~/.config
-    touch ~/.config/starship.toml
-    starship preset nerd-font-symbols > ~/.config/starship.toml

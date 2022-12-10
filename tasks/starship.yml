@@ -1,0 +1,18 @@
+- name: Install starship
+  ansible.builtin.shell: |
+    mkdir -p ~/.config
+    touch ~/.config/starship.toml
+    starship preset nerd-font-symbols > ~/.config/starship.toml
+
+- name: Add starship to .zshrc
+  lineinfile:
+    path: ~/.zshrc
+    regexp: '^\s*ZSH_THEME'
+    line: 'eval "$(starship init zsh)"'
+
+
+- name: Comment out ZSH_THEME
+  lineinfile:
+    path: ~/.zshrc
+    regexp: '^\s*ZSH_THEME'
+    line: '# ZSH_THEME'
