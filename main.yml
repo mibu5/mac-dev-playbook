@@ -31,6 +31,7 @@
 
     - role: gantsign.oh-my-zsh
       when: configure_ohmyzsh
+      become: yes
       tags:
         - oh-my-zsh
       users:
@@ -46,7 +47,7 @@
       tags: ['osx']
 
     - import_tasks: tasks/starship-preset.yml
-      tags: ['extra-packages']
+      tags: ['starship-preset']
 
     - block:
         - name: Run configured post-provision ansible task files.

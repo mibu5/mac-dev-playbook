@@ -52,6 +52,7 @@ homebrew_installed_packages:
   #    Terminal Setup
   # =======================================================================================================
   - bash
+  - starship
   - tldr
   - zsh-history-substring-search
 
@@ -84,7 +85,6 @@ homebrew_cask_apps:
   # Development
   - webstorm
   - iterm2
-  - starship
   - insomnia
   - visual-studio-code
 
