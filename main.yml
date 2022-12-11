@@ -32,8 +32,7 @@
     - role: gantsign.oh-my-zsh
       when: configure_ohmyzsh
       become: yes
-      tags:
-        - oh-my-zsh
+      tags: ['oh-my-zsh']
       users:
         - username: "{{ username }}"
 
@@ -54,6 +53,7 @@
         path: ~/.zshrc
         block: |
           export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
+      tags: ['oh-my-zsh']
 
     - block:
         - name: Run configured post-provision ansible task files.
