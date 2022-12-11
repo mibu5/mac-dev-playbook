@@ -45,15 +45,15 @@
       when: configure_osx
       tags: ['osx']
 
-    - import_tasks: tasks/starship.yml
-      tags: ['starship']
-
     - name: Set up brew correctly in the new shell
       blockinfile:
         path: ~/.zshrc
         block: |
           export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
       tags: ['oh-my-zsh']
+
+    - import_tasks: tasks/starship.yml
+      tags: ['starship']
 
     - block:
         - name: Run configured post-provision ansible task files.
