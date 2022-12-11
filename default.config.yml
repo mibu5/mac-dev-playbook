@@ -89,14 +89,14 @@ homebrew_cask_apps:
   - visual-studio-code
 
   # Font
-  - font-hack-nerd-font
-  - font-fira-code
-  - font-meslo-lg-nerd-font
-  - font-meslo-for-powerline
-  - font-monocraft
-  - font-iosevka
-  - font-iosevka-nerd-font
-  - font-jetbrains-mono
+  - homebrew/cask-fonts/font-hack-nerd-font
+  - homebrew/cask-fonts/font-fira-code
+  - homebrew/cask-fonts/font-meslo-lg-nerd-font
+  - homebrew/cask-fonts/font-meslo-for-powerline
+  - homebrew/cask-fonts/font-monocraft
+  - homebrew/cask-fonts/font-iosevka
+  - homebrew/cask-fonts/font-iosevka-nerd-font
+  - homebrew/cask-fonts/font-jetbrains-mono
 
   # Machine
   - aldente
