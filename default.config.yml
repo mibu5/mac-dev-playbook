@@ -90,6 +90,9 @@ homebrew_cask_apps:
   - insomnia
   - visual-studio-code
 
+  # Video
+  - vlc
+
   # Font
   - font-hack-nerd-font
   - font-fira-code
