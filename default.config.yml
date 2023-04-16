@@ -89,6 +89,7 @@ homebrew_cask_apps:
   - iterm2
   - insomnia
   - visual-studio-code
+  - docker
 
   # Video
   - vlc
